@@ -1,0 +1,58 @@
+button{text-align:left;border:1px solid #ccc;padding:0;margin-bottom:10px;box-shadow:0 0 5px rgba(0,0,0,0.2);background:#fff;width:100%;}
+iframe{pointer-events:none;}
+#menubtn{position:fixed;cursor:pointer;top:20px;left:0;padding:10px;width:100px;display:inline-block;border:1px solid #000;border-left:0;background:#000;color:#fff;border-radius:0 5px 5px 0;z-index:10000;transition:all 0.2s;}
+@media screen and (max-width: 799px) {
+    #menubtn{text-indent:-9999px;width:50px;top:5px;}
+}
+#menubtn > span{ position:absolute; width:27px; height:4px; right:10px; background:#fff; transition: all .4s; box-sizing: border-box; display: inline-block; border-radius:20%;}
+#menubtn > span:nth-of-type(1) {
+top: 12px;
+}
+#menubtn > span:nth-of-type(2) {
+top: 18.5px;
+}
+#menubtn > span:nth-of-type(3) {
+top: 25.5px;
+}
+#menubtn.open > span{background:#fff;}
+#menubtn.open > span:nth-of-type(1) {
+transform: translateY(6.5px) rotate(-45deg);
+height:6px;
+}
+#menubtn.open > span:nth-of-type(2) {
+opacity: 0;
+}
+#menubtn.open > span:nth-of-type(3) {
+transform: translateY(-6.5px) rotate(45deg);
+height:6px;
+}
+#menubox{position:fixed;transition:all 0.2s;left:0;top:0;z-index:9000;width:0;overflow:hidden;height:100%;}
+#menubox.open{max-width:860px;width:100%;}
+#menubox .togglebtn{padding:5px 10px;display:inline-flex;border-radius:5px;border:1px solid #ccc;background:#00ad9e;color:#fff;text-align:center; cursor:pointer; align-items: center; justify-content: center;}
+#mainbtn {padding-left:100px;}
+@media screen and (max-width: 799px) {
+    #mainbtn{padding-left:50px;}
+}
+#mainbtn input{width:60px;}
+#menubox > #parts{height:100%;background:rgba(235,235,235,0.8);padding:30px 10px;overflow-y:auto;overflow-x:hidden;z-index:9000;}
+@media screen and (max-width: 799px) {
+    #menubox > #parts{width:395px;padding:10px;}
+}
+.info{border-bottom:1px solid #ccc;}
+.info span{padding-right:10px;}
+#menubox > #parts > .togglebtn{position:absolute;width:70px;right:10px;top:10px;border-radius:100%;width:30px;height:30px;background:#333;color:#fff;font-weight:bold;font-size:24px;padding:0;}
+#menubox > #parts > #parts-tabmenu{display:flex;}
+#menubox > #parts > #parts-tabmenu > li{background:#fff;cursor:pointer;border-radius:5px 5px 0 0;border:1px solid #ccc;padding:5px 10px;}
+#menubox > #parts > #parts-tabmenu > li.active{background:#333;color:#fff;}
+#menubox > #parts > #parts-tabmenu > li+li{margin-left:5px;}
+#menubox > #parts > #parts-tab > div{display:none;}
+#menubox > #parts > #parts-tab > div.active{display:block;}
+#menubox > #parts > #parts-tab > div > div{column-count: 2;}
+#menubox > #parts > #parts-tab > div > div > div{zoom:0.4;break-inside:avoid;}
+#menubox > #parts > #parts-tab a{pointer-events: none!important;}
+
+#l-wrapper-wrap a {pointer-events:none!important;}
+#l-wrapper > *{cursor:move;}
+
+/*パーツ調整*/
+.l-header{position:relative!important;}

@@ -1,0 +1,44 @@
+.l-footer{
+    &--1{
+        > div{
+            max-width:1200px;
+            margin:0 auto;
+            padding:10px 0;
+            > p{
+                text-align:center;
+            }
+        }
+    }
+    &--2{
+        > div{
+            max-width:1200px;
+            margin:0 auto;
+            padding:10px 0;
+            > p{
+                text-align:center;
+            }
+        }
+        &__menu{
+            display:flex;
+            justify-content: center;
+            flex-wrap:wrap;
+            margin-bottom:10px;
+            li{
+                padding:0 10px;
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 799px) {
+    .l-footer{
+        > .u-flex{
+            display:block!important;
+            ul{
+                margin-bottom:10px;
+            }
+        }
+    }
+}

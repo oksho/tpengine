@@ -1,0 +1,34 @@
+.u-margin{
+    &--bss{ //bottom ssmall
+        margin-bottom:10px;
+        @media screen and (max-width:799px){
+            margin-bottom:5px;
+        }
+    }
+    &--bs{ //bottom small
+        margin-bottom:20px;
+        @media screen and (max-width:799px){
+            margin-bottom:10px;
+        }
+    }
+    &--bm{ //bottom medium
+        margin-bottom:40px;
+        @media screen and (max-width:799px){
+            margin-bottom:20px;
+        }
+    }
+    &--bl{ //bottom large
+        margin-bottom:60px;
+        @media screen and (max-width:799px){
+            margin-bottom:30px;
+        }
+    }
+    &--lrs{ //left rigth small
+        margin-left:10px;
+        margin-right:10px;
+    }
+    &--lrm{ //left rigth medium
+        margin-left:20px;
+        margin-right:20px;
+    }
+}

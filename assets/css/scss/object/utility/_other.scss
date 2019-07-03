@@ -1,0 +1,16 @@
+/*fontawesome*/
+.fas{
+    margin-left:5px;
+    margin-right:5px;
+    vertical-align: middle;
+}
+
+.u-shadow{
+    box-shadow:0 0 10px rgba(0,0,0,0.4);
+}
+
+@media screen and (max-width: 799px) {
+    .u-spw100p{ //for sp width 100%
+        width:100%;
+    }
+}

@@ -1,0 +1,41 @@
+.u-font{
+    &--m{ //明朝
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+    }
+    &--sss{ //ssmall
+        font-size:10px;
+    }
+    &--ss{ //small
+        font-size:12px;
+    }
+    &--sm{ //medium
+        font-size:16px;
+    }
+    &--sl{ //large
+        font-size:18px;
+    }
+    &--s2l{ //2large
+        font-size:20px;
+    }
+    &--s3l{ //3large
+        font-size:24px;
+        @media screen and (max-width: 799px) {
+            font-size:22px;
+        }
+    }
+    &--s4l{ //4large
+        font-size:28px;
+        @media screen and (max-width: 799px) {
+            font-size:24px;
+        }
+    }
+}
+
+.u-indent--1{
+    text-indent:-1em;
+    margin-left:1em;
+}
+
+.u-lineheight--1{
+    line-height:1;
+}

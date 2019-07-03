@@ -1,0 +1,25 @@
+.c-col{
+    &--2{
+        > *{
+            width:50%;
+        }
+    }
+    &--sp100p{
+        @media screen and (max-width: 799px) {
+            > *{
+                width:100%;
+            }
+        }
+    }
+}
+
+.c-main{
+    &--1{
+        width:100%;
+        height:calc(100vw / 3);
+        &--bg1{
+            background:url(../img/dummy.jpg) no-repeat center;
+            background-size:cover;
+        }
+    }
+}

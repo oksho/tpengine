@@ -1,0 +1,36 @@
+.u-ta{
+    &--center{
+        text-align:center!important;
+    }
+    &--left{
+        text-align: left!important;
+    }
+    &--right{
+        text-align:right!important;
+    }
+}
+
+@media screen and (min-width:800px){
+    .u-float{
+        &--l{
+            float:left;
+        }
+        &--r{
+            float:right;
+        }
+    }
+}
+
+/*for wordpress - single.php*/
+.aligncenter{
+    margin-left:auto;
+    margin-right:auto;
+    display: block;
+}
+.alignleft{
+    float:left;
+}
+.alignright{
+    float:right;
+}
+

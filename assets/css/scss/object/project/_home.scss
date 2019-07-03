@@ -1,0 +1,47 @@
+.p-home{
+    .l-wrapper{
+        width:100%;
+        position: relative;
+        background: url(../img/bg.jpg);
+        background-position:top center;
+        background-repeat:no-repeat;
+        background-size: cover;
+    } 
+    @media screen and (min-width:800px){
+        .l-header{
+            &__logo{
+                display:none;
+            }
+        }
+    }
+    &__catch{
+        margin:240px 0;
+        @media screen and (max-width:799px){
+            margin:100px 20px 60px;
+        }
+    }
+    &__sec1{
+        max-width:1000px;
+        margin:0 auto;
+        &__box{
+            width:calc(50% - 40px);
+            @media screen and (max-width:799px){
+                width:100%;
+            }
+        }
+        &__thumb{
+            width:150px;
+            @media screen and (max-width:799px){
+                width:120px;
+                img{
+                    max-width:120px;
+                }
+            }
+        }
+        &__text{
+            width:calc(100% - 150px);
+        }
+    }
+}
+    
+

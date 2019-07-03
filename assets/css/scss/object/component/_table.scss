@@ -1,0 +1,12 @@
+.c-basic-tbl{
+    th,td{
+        padding:10px;
+        border-bottom:1px solid #000;
+        text-align:left;
+    }
+    &__thnoborder{
+        th{
+            border:none;
+        }
+    }
+}

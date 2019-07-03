@@ -1,0 +1,39 @@
+input[type="submit"] {
+    -webkit-appearance: none;
+}
+input::placeholder {
+    color: #999;
+}
+input:-ms-input-placeholder {
+    color: #999;
+}
+input::-ms-input-placeholder {
+    color: #999;
+}
+input,button{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+}
+input[type="text"],textarea{
+    border:1px solid #4d4d4d;
+    padding:5px 10px;
+    border-radius:10px;
+    width:100%;
+    @media screen and (max-width:799px){
+        font-size:16px;
+    }
+}
+input[type="radio"]{
+    transform:scale(1.2);
+}
+select{
+}
+label{
+    display:block;
+}
+button{
+    border:none;
+    background:none;
+    cursor:pointer;
+}
+
+

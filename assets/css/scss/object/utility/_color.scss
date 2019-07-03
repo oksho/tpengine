@@ -1,0 +1,30 @@
+.u-c{ //color
+    &--red{
+        &--1{
+            color:#ff0000;
+        }
+    }
+    &--bl{
+        &--1{
+            color:#00b0f0;
+        }
+    }
+    &--wh{
+        &--1{
+            color:#fff;
+        }
+    }
+}
+
+.u-bg{
+    &--gr{
+        &--1{
+            background:#00ad9e;
+        }
+    }
+    &--gray{
+        &--1{
+            background:#efefef;
+        }
+    }
+}

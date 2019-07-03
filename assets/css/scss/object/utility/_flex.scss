@@ -1,0 +1,18 @@
+.u-flex{
+    display:flex;
+    &--wrap{
+        flex-wrap:wrap;
+    }
+    &--center{
+        justify-content: center;
+    }
+    &--vcenter{
+        align-items: center;
+    }
+    &--between{
+        justify-content: space-between;
+    }
+    &--around{
+        justify-content: space-around;
+    }
+}

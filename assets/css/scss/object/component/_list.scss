@@ -1,0 +1,16 @@
+.c-list{
+    &--col3{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: space-around;
+        > *{
+            width:calc(33% - 20px);
+            @media screen and (max-width: 799px) {
+                width:100%;
+                + *{
+                    margin-top:20px;
+                }
+            }
+        }
+    }
+}

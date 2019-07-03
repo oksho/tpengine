@@ -1,0 +1,31 @@
+.c-breadcrumbs{
+    max-width:calc(1000px + 40px);
+    padding:20px;
+    margin:0 auto;
+    font-size:14px;
+    @media screen and (max-width: 799px) {
+        margin:50px 0 0;
+    }
+    ul{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: flex-end;
+        li{
+            position:relative;
+            +li{
+                margin-left:20px;
+                &::before{
+                    content:'>';
+                    position: absolute;
+                    left:-15px;
+                }
+            }
+            a{
+                color:#00b0f0;
+                text-decoration:underline;
+            }
+        }
+    }
+}
+
+
