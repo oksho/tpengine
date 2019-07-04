@@ -442,6 +442,38 @@ iframe {
   font-size: 34px;
   font-weight: bold;
   text-align: center; }
+  @media screen and (max-width: 799px) {
+    .c-headline--lowerh1--1 {
+      padding: 20px;
+      font-size: 24px; } }
+
+.c-headline--lowerh1--2 {
+  background: url(../img/dummy.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 34px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px; }
+  .c-headline--lowerh1--2 span {
+    font-size: 18px;
+    width: 100%;
+    display: block; }
+  @media screen and (max-width: 799px) {
+    .c-headline--lowerh1--2 {
+      height: 200px;
+      font-size: 24px; } }
 
 .c-headline--1 {
   margin-bottom: 15px;
@@ -449,6 +481,9 @@ iframe {
   border-bottom: 1px solid #000;
   font-size: 30px;
   font-weight: bold; }
+  @media screen and (max-width: 799px) {
+    .c-headline--1 {
+      font-size: 24px; } }
 
 .c-headline--2 {
   margin-bottom: 20px;
@@ -456,6 +491,10 @@ iframe {
   font-size: 30px;
   font-weight: bold;
   padding: 0 10px; }
+  @media screen and (max-width: 799px) {
+    .c-headline--2 {
+      font-size: 24px;
+      margin-bottom: 10px; } }
 
 .c-headline--3 {
   margin-bottom: 60px;
@@ -476,6 +515,13 @@ iframe {
       bottom: -20px;
       margin: 0 auto;
       content: ''; }
+  @media screen and (max-width: 799px) {
+    .c-headline--3 {
+      margin-bottom: 30px;
+      font-size: 26px; }
+      .c-headline--3 > span::after {
+        height: 4px;
+        bottom: -10px; } }
 
 .c-headline--4 {
   margin-bottom: 60px;
@@ -493,6 +539,13 @@ iframe {
       bottom: -20px;
       margin: 0 auto;
       content: ''; }
+  @media screen and (max-width: 799px) {
+    .c-headline--4 {
+      margin-bottom: 30px;
+      font-size: 26px; }
+      .c-headline--4 > span::after {
+        height: 4px;
+        bottom: -10px; } }
 
 .c-col--2 > * {
   width: 50%; }
@@ -957,6 +1010,9 @@ button {
   @media screen and (max-width: 799px) {
     .u-font--s4l {
       font-size: 24px; } }
+
+.u-font--shadow {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
 
 .u-indent--1 {
   text-indent: -1em;

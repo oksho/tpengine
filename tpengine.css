@@ -51,7 +51,7 @@ height:6px;
 #menubox > #parts > #parts-tab > div > div > div{zoom:0.4;break-inside:avoid;}
 #menubox > #parts > #parts-tab a{pointer-events: none!important;}
 
-#l-wrapper-wrap a {pointer-events:none!important;}
+#l-wrapper a {pointer-events:none!important;}
 #l-wrapper > *{cursor:move;}
 
 /*パーツ調整*/

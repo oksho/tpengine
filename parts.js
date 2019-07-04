@@ -101,7 +101,7 @@ const box1 = ''
 	+'<div class="l-section__basic">\n'
 		+'<div class="u-flex u-flex--wrap c-col--2 c-col--sp100p">\n'
 			+'<div><img src="assets/img/dummy.jpg"></div>\n'
-			+'<div class="u-padding--m"><h2 class="u-font--sxl bold">\n'+dtitle+'</h2><p>\n'+dtext+'</p></div>\n'
+			+'<div class="u-padding--m"><h2 class="u-font--s2l bold">\n'+dtitle+'</h2><p>\n'+dtext+'</p></div>\n'
 		+'</div>\n'
 	+'</div>\n'
 +'</section>\n'
@@ -112,7 +112,7 @@ const box2 = ''
 +'<section class="l-section u-bg--gray--1">\n'
 	+'<div class="l-section__basic">\n'
 		+'<div class="u-flex u-flex--wrap c-col--2 c-col--sp100p">\n'
-			+'<div class="u-padding--m"><h2 class="u-font--sxl bold">\n'+dtitle+'</h2><p>\n'+dtext+'</p></div>\n'
+			+'<div class="u-padding--m"><h2 class="u-font--s2l bold">\n'+dtitle+'</h2><p>\n'+dtext+'</p></div>\n'
 			+'<div><img src="assets/img/dummy.jpg"></div>\n'
 		+'</div>\n'
 	+'</div>\n'
@@ -216,7 +216,12 @@ const lowerh11 = ''
 +'</h1>\n'
 ;
 
-
+//lowerh1_2
+const lowerh12 = ''
++'<div class="c-headline--lowerh1--2 u-c--wh--1">\n'
+	+'<h1>下層ページタイトル<span>lower title</span></h1>\n'
++'</div>\n'
+;
 
 
 
@@ -270,6 +275,8 @@ function addparts(btn_id) {
 	//下層h1
 	if (btn_id == 'lowerh11'){
 		wrapper.insertAdjacentHTML('beforeend', lowerh11 + '\n');
+	}else if (btn_id == 'lowerh12'){
+		wrapper.insertAdjacentHTML('beforeend', lowerh12 + '\n');
 	}else{
 	}
 	

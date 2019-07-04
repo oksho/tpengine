@@ -21,9 +21,7 @@
 
 
 
-<div id="l-wrapper-wrap">
 <div id="l-wrapper">
-</div>
 </div>
 
 
@@ -40,7 +38,7 @@
             <a id="download" class="togglebtn" href="#" download="download.html" onclick="handleDownload()">DL html</a>
             <a class="togglebtn" target="_blank" href="https://github.com/oksho/my_assets">DL assets</a>
         </div>
-        <p class="info u-flex u-padding--s u-font--ss"><span>2019.07.01</span><span>パーツ増やし中。レスポンシブ調整中。</span></p>
+        <p class="info u-flex u-padding--s u-font--ss"><span>2019.07.04</span><span>パーツ増やし中</span></p>
         <p class="u-padding--s u-font--ss u-c--red--1">1.パーツを組み合わせる / 2.[ DL html ] [ DL assets ]でダウンロード / 3.画像はご用意下さい<br>※D&Dでパーツ動かせます。Dクリでパーツ削除できるます。</p>
 
         <ul id="parts-tabmenu">
@@ -79,6 +77,7 @@
             <div id="parts-tab--lowerh1">
                 <div>
                     <div><button id="lowerh11" onClick='addparts(this.id)'><script>document.write(lowerh11);</script></button></div>
+                    <div><button id="lowerh12" onClick='addparts(this.id)'><script>document.write(lowerh12);</script></button></div>
                 </div>
             </div>
         </div>
@@ -121,12 +120,12 @@ jQuery(function($){
 });
 
 function save() {
-    let savedata = $("#l-wrapper-wrap").html();
+    let savedata = $("#l-wrapper").html();
     sessionStorage.setItem('savedata', savedata);
 }
 function load() {
     let getdata = sessionStorage.getItem('savedata');
-    $("#l-wrapper-wrap").html(getdata);
+    $("#l-wrapper").html(getdata);
 }
 
 jQuery(function($){
@@ -136,12 +135,12 @@ jQuery(function($){
 function handleDownload() {
 const bom = new Uint8Array([0xEF, 0xBB, 0xBF]);
 const tphd = document.getElementById("tpengine");
-const design = document.getElementById("l-wrapper-wrap");
+const design = document.getElementById("l-wrapper");
 let content = ''
 +'<!doctype html>\n'
 +'<html lang="ja">\n'
 +'<head>\n'
-+'<head id="tpengine">\n'
++'<head>\n'
 +'<meta charset="utf-8">\n'
 +'<meta http-equiv="X-UA-Compatible" content="IE=edge">\n'
 +'<meta name="format-detection" content="telephone=no">\n'
@@ -156,7 +155,9 @@ let content = ''
 +'<link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />\n'
 +'</head>\n'
 +'<body>\n'
++'<div id="l-wrapper">\n'
 + design.innerHTML + '\n'
++'</div>\n'
 +'<script src="assets/js/script.js"><\/script>\n'
 +'</body>\n'
 +'</html>'
