@@ -3,3 +3,18 @@
         opacity:0.7;
     }
 }
+
+.u-link{
+    &--noline{
+        text-decoration:none;
+        &:hover{
+            text-decoration:underline;
+        }
+    }
+    &--line{
+        text-decoration:underline;
+        &:hover{
+            text-decoration:none;
+        }
+    }
+}

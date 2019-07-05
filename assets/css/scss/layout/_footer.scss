@@ -28,17 +28,39 @@
             }
         }
     }
-}
-
-
-
-@media screen and (max-width: 799px) {
-    .l-footer{
-        > .u-flex{
-            display:block!important;
-            ul{
-                margin-bottom:10px;
+    &--3{
+        display:flex;
+        flex-wrap:wrap;
+        > div{
+            width:50%;
+            flex-basis:50%;
+        }
+        &__sitemap{
+            padding:40px;
+            &__menu{
+                display:flex;
+                flex-wrap:wrap;
+                margin-bottom:20px;
+                li{
+                    margin-right:20px;
+                    padding:5px 0;
+                }
+            }
+            address{
+                margin-bottom:20px;
+            }
+        }
+        @media screen and (max-width: 799px) {
+            > div{
+                width:100%;
+                flex-basis:100%;
+            }
+            &__sitemap{
+                padding:20px;
             }
         }
     }
 }
+
+
+

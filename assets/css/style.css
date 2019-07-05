@@ -361,11 +361,37 @@ iframe {
   .l-footer--2__menu li {
     padding: 0 10px; }
 
-@media screen and (max-width: 799px) {
-  .l-footer > .u-flex {
-    display: block !important; }
-    .l-footer > .u-flex ul {
-      margin-bottom: 10px; } }
+.l-footer--3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .l-footer--3 > div {
+    width: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%; }
+  .l-footer--3__sitemap {
+    padding: 40px; }
+    .l-footer--3__sitemap__menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-bottom: 20px; }
+      .l-footer--3__sitemap__menu li {
+        margin-right: 20px;
+        padding: 5px 0; }
+    .l-footer--3__sitemap address {
+      margin-bottom: 20px; }
+  @media screen and (max-width: 799px) {
+    .l-footer--3 > div {
+      width: 100%;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+    .l-footer--3__sitemap {
+      padding: 20px; } }
 
 .l-wrapper {
   width: 100%;
@@ -586,22 +612,22 @@ iframe {
   border: none; }
 
 .c-btn {
-  background: #018637;
-  color: #fff;
-  line-height: 1;
-  padding: 5px 40px;
-  border-radius: 30px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-  .c-btn:hover {
-    opacity: 0.7; }
-  .c-btn--l {
-    font-size: 24px;
-    padding: 15px 40px; }
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+  .c-btn--1 {
+    padding: 10px 40px;
+    border: 1px solid #333;
+    background: #fff; }
+    .c-btn--1:hover {
+      background: #333;
+      color: #fff; }
+    @media screen and (max-width: 799px) {
+      .c-btn--1 {
+        padding: 10px 20px; } }
   .c-btn--brown {
     background: #A48B78; }
 
@@ -609,13 +635,6 @@ iframe {
   position: fixed;
   right: 0;
   bottom: 0; }
-
-@media screen and (max-width: 799px) {
-  .c-btn {
-    padding: 5px 20px; }
-    .c-btn--l {
-      font-size: 18px;
-      padding: 15px 20px; } }
 
 .c-breadcrumbs {
   max-width: calc(1000px + 40px);
@@ -953,6 +972,16 @@ button {
 
 .ah:hover {
   opacity: 0.7; }
+
+.u-link--noline {
+  text-decoration: none; }
+  .u-link--noline:hover {
+    text-decoration: underline; }
+
+.u-link--line {
+  text-decoration: underline; }
+  .u-link--line:hover {
+    text-decoration: none; }
 
 .u-ta--center {
   text-align: center !important; }
