@@ -209,7 +209,19 @@ const box7 = ''
 +'<section class="l-section">\n'
 	+'<div class="l-section__basic">\n'
 		+'<h2 class="c-headline--3"><span>'+dtitle+'</span></h2>\n'
-		+'<p class="u-ta--center">\n'+dtext+'</p>\n'
+		+'<p class="u-ta--center u-margin--bs">\n'+dtext+'</p>\n'
+		+'<table class="c-table--1 c-width--m u-margin--lr-auto">\n'
+			+'<tbody>\n'
+				+'<tr>\n'
+					+'<th>項目</th>\n'
+					+'<td><input type="text"></td>\n'
+				+'</tr>\n'
+				+'<tr>\n'
+					+'<th>項目</th>\n'
+					+'<td><textarea rows="4"></textarea></td>\n'
+				+'</tr>\n'
+			+'</tbody>\n'
+		+'</table>\n'
 	+'</div>\n'
 +'</section>\n'
 ;
@@ -246,6 +258,7 @@ const box8 = ''
 	+'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.67348906152!2d139.7270709515013!3d35.660415338622286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b770913970d%3A0xccc3467fcb15b353!2zR29vZ2xl5ZCI5ZCM5Lya56S-!5e0!3m2!1sja!2sjp!4v1561769138816!5m2!1sja!2sjp" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>\n'
 +'</section>\n'
 ;
+
 
 
 

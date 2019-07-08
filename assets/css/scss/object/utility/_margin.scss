@@ -1,4 +1,15 @@
 .u-margin{
+    &--auto{
+        margin:auto;
+    }
+    &--ud-auto{
+        margin-top:auto;
+        margin-bottom:auto;
+    }
+    &--lr-auto{
+        margin-left:auto;
+        margin-right:auto;
+    }
     &--bss{ //bottom ssmall
         margin-bottom:10px;
         @media screen and (max-width:799px){

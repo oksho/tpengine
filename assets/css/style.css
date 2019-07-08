@@ -580,6 +580,21 @@ iframe {
   .c-col--sp100p > * {
     width: 100%; } }
 
+.c-width--ss {
+  width: 100%;
+  max-width: 300px; }
+
+.c-width--s {
+  width: 100%;
+  max-width: 500px; }
+
+.c-width--m {
+  width: 100%;
+  max-width: 700px; }
+
+.c-width--100p {
+  width: 100%; }
+
 .c-main--1 {
   width: 100%;
   height: calc(100vw / 3); }
@@ -603,13 +618,18 @@ iframe {
         .c-list--col3 > * + * {
           margin-top: 20px; } }
 
-.c-basic-tbl th, .c-basic-tbl td {
-  padding: 10px;
-  border-bottom: 1px solid #000;
-  text-align: left; }
+.c-table--1 th, .c-table--1 td {
+  padding: 20px;
+  border: 1px solid #333;
+  text-align: left;
+  vertical-align: middle; }
 
-.c-basic-tbl__thnoborder th {
-  border: none; }
+.c-table--1 th {
+  background: #efefef; }
+
+@media screen and (max-width: 799px) {
+  .c-table--1 th, .c-table--1 td {
+    padding: 5px; } }
 
 .c-btn {
   display: -webkit-inline-box;
@@ -680,23 +700,14 @@ input::-ms-input-placeholder {
 input::placeholder {
   color: #999; }
 
-input:-ms-input-placeholder {
-  color: #999; }
-
-input::-ms-input-placeholder {
-  color: #999; }
-
 input, button {
   font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "メイリオ", sans-serif; }
 
 input[type="text"], textarea {
-  border: 1px solid #4d4d4d;
+  border: 1px solid #333;
   padding: 5px 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 100%; }
-  @media screen and (max-width: 799px) {
-    input[type="text"], textarea {
-      font-size: 16px; } }
 
 input[type="radio"] {
   -webkit-transform: scale(1.2);
@@ -931,6 +942,17 @@ button {
 
 .u-bg--gray--1 {
   background: #efefef; }
+
+.u-margin--auto {
+  margin: auto; }
+
+.u-margin--ud-auto {
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.u-margin--lr-auto {
+  margin-left: auto;
+  margin-right: auto; }
 
 .u-margin--bss {
   margin-bottom: 10px; }
