@@ -1,0 +1,23 @@
+.wp-pagenavi{
+    text-align:center;
+    span,a{
+        display:inline-block;
+        margin:0 5px;
+        border:1px solid #999;
+        background:#f2f2f2;
+        border-radius:5px;
+        padding:0px 10px;
+    }
+    .current{
+        background:#00ad9e;
+        color:#fff;
+    }
+}
+
+
+@media screen and (max-width: 799px) {
+    .wp-pagenavi a.smaller,
+    .wp-pagenavi a.larger,
+    .wp-pagenavi span.extend {
+        display: none;}
+}

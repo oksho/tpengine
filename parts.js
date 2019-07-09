@@ -2,7 +2,7 @@
 const dtitle100p = 'ダミータイトル横幅100%';
 const dtitle = 'ダミータイトル横幅最大1200';
 const dtext = 'ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章ダミー文章';
-
+const dimg = '<img src="assets/img/dummy.jpg">'
 
 
 ///////////////////////////////////////////////////////////////////
@@ -125,7 +125,7 @@ const box1 = ''
 +'<section class="l-section">\n'
 	+'<div class="l-section__basic">\n'
 		+'<div class="u-flex u-flex--wrap c-col--2 c-col--sp100p">\n'
-			+'<div><img src="assets/img/dummy.jpg"></div>\n'
+			+'<div>'+dimg+'</div>\n'
 			+'<div class="u-padding--m">\n'
 				+'<h2 class="u-font--s2l bold u-margin--bs">'+dtitle+'</h2>\n'
 				+'<p class="u-margin--bs">'+dtext+'</p>\n'
@@ -146,7 +146,7 @@ const box2 = ''
 				+'<p class="u-margin--bs">'+dtext+'</p>\n'
 				+'<div><a class="c-btn c-btn--1" href="">リンクボタン</a></div>\n'
 			+'</div>\n'
-			+'<div><img src="assets/img/dummy.jpg"></div>\n'
+			+'<div>'+dimg+'</div>\n'
 		+'</div>\n'
 	+'</div>\n'
 +'</section>\n'
@@ -177,7 +177,7 @@ const box5 = ''
 +'<section class="l-section">\n'
 	+'<div class="l-section__p50">\n'
 		+'<div class="u-flex u-flex--wrap u-flex--vcenter c-col--2 c-col--sp100p">\n'
-			+'<div><img src="assets/img/dummy.jpg"></div>\n'
+			+'<div>'+dimg+'</div>\n'
 			+'<div class="u-padding--m">\n'
 				+'<h2 class="c-headline--4"><span>'+dtitle100p+'</span></h2>\n'
 				+'<p class="u-margin--bs">\n'+dtext+'</p>\n'
@@ -198,7 +198,7 @@ const box6 = ''
 				+'<p class="u-margin--bs">\n'+dtext+'</p>\n'
 				+'<div><a class="c-btn c-btn--1" href="">リンクボタン</a></div>\n'
 			+'</div>\n'
-			+'<div><img src="assets/img/dummy.jpg"></div>\n'
+			+'<div>'+dimg+'</div>\n'
 		+'</div>\n'
 	+'</div>\n'
 +'</section>\n'
@@ -259,8 +259,67 @@ const box8 = ''
 +'</section>\n'
 ;
 
+//box10 - ブログ記事風
+const box10 = ''
++'<section class="l-section">\n'
+	+'<div class="l-section__basic">\n'
+		+'<h2 class="c-headline--2"><span>'+dtitle+'</span></h2>\n'
+		+'<ul class="c-list--info c-list--info--1 u-margin--bm">\n'
+			+'<li>\n'
+				+'<div class="c-list--info--1__eyecatch">'+dimg+'</div>\n'
+				+'<div class="c-list--info--1__content">\n'
+					+'<p class="c-list--info--1__content__date">2019.11.11</p>\n'
+					+'<h3>ブログ記事タイトル</h3>\n'
+					+'<p>ブログ記事内容。文字数制限は自由に。</p>\n'
+				+'</div>\n'
+			+'</li>\n'
+			+'<li>\n'
+				+'<div class="c-list--info--1__eyecatch">'+dimg+'</div>\n'
+				+'<div class="c-list--info--1__content">\n'
+					+'<p class="c-list--info--1__content__date">2019.11.11</p>\n'
+					+'<h3>ブログ記事タイトル</h3>\n'
+					+'<p>ブログ記事内容。文字数制限は自由に。</p>\n'
+				+'</div>\n'
+			+'</li>\n'
+		+'</ul>\n'
+		+'<div class="u-ta--center">\n'
+			+'<div class="wp-pagenavi">\n'
+				+'<span class="pages">1 / 3</span>\n'
+				+'<span class="current">1</span>\n'
+				+'<a class="page larger" href="">2</a>\n'
+				+'<a class="page larger" href="">3</a>\n'
+			+'</div>\n'
+		+'</div>\n'
+	+'</div>\n'
++'</section>\n'
+;
 
-
+//box11 - 画像無し1行リスト。新着とか。
+const box11 = ''
++'<section class="l-section">\n'
+	+'<div class="l-section__basic">\n'
+		+'<h2 class="c-headline--2"><span>'+dtitle+'</span></h2>\n'
+		+'<ul class="c-list--info c-list--info--2 u-margin--bm">\n'
+			+'<li>\n'
+				+'<p>2019.11.11</p>\n'
+				+'<h3>'+dtext+'</h3>\n'
+			+'</li>\n'
+			+'<li>\n'
+				+'<p>2019.11.11</p>\n'
+				+'<h3>'+dtext+'</h3>\n'
+			+'</li>\n'
+		+'</ul>\n'
+		+'<div class="u-ta--center">\n'
+			+'<div class="wp-pagenavi">\n'
+				+'<span class="pages">1 / 3</span>\n'
+				+'<span class="current">1</span>\n'
+				+'<a class="page larger" href="">2</a>\n'
+				+'<a class="page larger" href="">3</a>\n'
+			+'</div>\n'
+		+'</div>\n'
+	+'</div>\n'
++'</section>\n'
+;
 
 ///////////////////////////////////////////////////////////////////
 // 下層h1
@@ -326,6 +385,10 @@ function addparts(btn_id) {
 		wrapper.insertAdjacentHTML('beforeend', box8 + '\n');
 	}else if (btn_id == 'box9'){
 		wrapper.insertAdjacentHTML('beforeend', box9 + '\n');
+	}else if (btn_id == 'box10'){
+		wrapper.insertAdjacentHTML('beforeend', box10 + '\n');
+	}else if (btn_id == 'box11'){
+		wrapper.insertAdjacentHTML('beforeend', box11 + '\n');
 	}else if (btn_id == 'main1'){
 		wrapper.insertAdjacentHTML('beforeend', main1 + '\n');
 	}else{

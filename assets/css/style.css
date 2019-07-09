@@ -519,8 +519,7 @@ iframe {
   padding: 0 10px; }
   @media screen and (max-width: 799px) {
     .c-headline--2 {
-      font-size: 24px;
-      margin-bottom: 10px; } }
+      font-size: 24px; } }
 
 .c-headline--3 {
   margin-bottom: 60px;
@@ -618,6 +617,54 @@ iframe {
         .c-list--col3 > * + * {
           margin-top: 20px; } }
 
+.c-list--info--1 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .c-list--info--1 li + li {
+    margin-top: 20px; }
+
+.c-list--info--1__eyecatch {
+  -ms-flex-preferred-size: 300px;
+  flex-basis: 300px;
+  width: 300px; }
+  @media screen and (max-width: 799px) {
+    .c-list--info--1__eyecatch {
+      -ms-flex-preferred-size: 120px;
+      flex-basis: 120px;
+      width: 120px; } }
+
+.c-list--info--1__content {
+  width: calc(100% - 300px);
+  padding-left: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+  .c-list--info--1__content__date {
+    font-weight: bold;
+    color: #666; }
+  .c-list--info--1__content h3 {
+    font-size: 18px;
+    font-weight: bold; }
+
+.c-list--info--2 li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .c-list--info--2 li + li {
+    margin-top: 10px; }
+  .c-list--info--2 li > p {
+    font-weight: bold;
+    padding-right: 20px; }
+  .c-list--info--2 li > h3 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+
 .c-table--1 th, .c-table--1 td {
   padding: 20px;
   border: 1px solid #333;
@@ -684,6 +731,25 @@ iframe {
       .c-breadcrumbs ul li a {
         color: #00b0f0;
         text-decoration: underline; }
+
+.wp-pagenavi {
+  text-align: center; }
+  .wp-pagenavi span, .wp-pagenavi a {
+    display: inline-block;
+    margin: 0 5px;
+    border: 1px solid #999;
+    background: #f2f2f2;
+    border-radius: 5px;
+    padding: 0px 10px; }
+  .wp-pagenavi .current {
+    background: #00ad9e;
+    color: #fff; }
+
+@media screen and (max-width: 799px) {
+  .wp-pagenavi a.smaller,
+  .wp-pagenavi a.larger,
+  .wp-pagenavi span.extend {
+    display: none; } }
 
 input[type="submit"] {
   -webkit-appearance: none; }
