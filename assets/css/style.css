@@ -396,12 +396,7 @@ iframe {
 .l-wrapper {
   width: 100%;
   min-height: 100%;
-  position: relative;
-  background-color: #17b6ef;
-  background-image: url(../img/bg2.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  background-size: 100% auto; }
+  position: relative; }
 
 .l-main {
   position: relative;
