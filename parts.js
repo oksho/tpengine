@@ -321,6 +321,16 @@ const box11 = ''
 +'</section>\n'
 ;
 
+//bread1 - パンくず
+const bread1 = ''
++'<div class="c-breadcrumbs">\n'
+	+'<ul>\n'
+		+'<li><a href="../">ホーム</a></li>\n'
+		+'<li><span>ページタイトル</span></li>\n'
+	+'</ul>\n'
++'</div>\n'
+;
+
 ///////////////////////////////////////////////////////////////////
 // 下層h1
 ///////////////////////////////////////////////////////////////////
@@ -389,6 +399,8 @@ function addparts(btn_id) {
 		wrapper.insertAdjacentHTML('beforeend', box10 + '\n');
 	}else if (btn_id == 'box11'){
 		wrapper.insertAdjacentHTML('beforeend', box11 + '\n');
+	}else if (btn_id == 'bread1'){
+		wrapper.insertAdjacentHTML('beforeend', bread1 + '\n');
 	}else if (btn_id == 'main1'){
 		wrapper.insertAdjacentHTML('beforeend', main1 + '\n');
 	}else{

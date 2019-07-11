@@ -712,9 +712,9 @@ iframe {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end; }
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start; }
     .c-breadcrumbs ul li {
       position: relative; }
       .c-breadcrumbs ul li + li {
@@ -724,7 +724,6 @@ iframe {
           position: absolute;
           left: -15px; }
       .c-breadcrumbs ul li a {
-        color: #00b0f0;
         text-decoration: underline; }
 
 .wp-pagenavi {
