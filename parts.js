@@ -62,7 +62,7 @@ const hd2 = ''
 
 //ft1
 const ft1 = ''
-+'<footer class="l-footer l-footer--1">\n'
++'<footer class="l-footer l-footer--1" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">\n'
 	+'<div>\n'
 		+'<p>&copy; 2019 TPENGINE</p>\n'
 	+'</div>\n'
@@ -70,7 +70,7 @@ const ft1 = ''
 
 //ft2
 const ft2 = ''
-+'<footer class="l-footer l-footer--2 u-bg--gr--1 u-c--wh--1">\n'
++'<footer class="l-footer l-footer--2 u-bg--gr--1 u-c--wh--1" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">\n'
 	+'<div>\n'
 		+'<ul class="l-footer--2__menu">\n'
 			+'<li><a class="u-c--wh--1" href="">ホーム</a></li>\n'
@@ -84,7 +84,7 @@ const ft2 = ''
 
 //ft3
 const ft3 = ''
-+'<footer class="l-footer l-footer--3 u-bg--gr--1 u-c--wh--1">\n'
++'<footer class="l-footer l-footer--3 u-bg--gr--1 u-c--wh--1" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">\n'
 	+'<div>\n'
 		+'<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.67348906152!2d139.7270709515013!3d35.660415338622286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b770913970d%3A0xccc3467fcb15b353!2zR29vZ2xl5ZCI5ZCM5Lya56S-!5e0!3m2!1sja!2sjp!4v1561769138816!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>\n'
 	+'</div>\n'
