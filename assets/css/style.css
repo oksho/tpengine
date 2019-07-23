@@ -155,7 +155,8 @@ iframe {
             display: flex;
             -webkit-box-align: center;
             -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+            font-weight: bold; }
             .l-header--1__inner__gnavi ul li a::after {
               content: '';
               position: absolute;
@@ -199,7 +200,8 @@ iframe {
           .l-header--2__inner__gnavi ul li + li {
             margin-left: 30px; }
           .l-header--2__inner__gnavi ul li a {
-            position: relative; }
+            position: relative;
+            font-weight: bold; }
             .l-header--2__inner__gnavi ul li a::after {
               content: '';
               position: absolute;
@@ -345,14 +347,15 @@ iframe {
 .l-footer--1 > div {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 0; }
+  padding: 50px 0;
+  border-top: 1px solid #ccc; }
   .l-footer--1 > div > p {
     text-align: center; }
 
 .l-footer--2 > div {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 10px 0; }
+  padding: 50px 0; }
   .l-footer--2 > div > p {
     text-align: center; }
 
@@ -380,7 +383,7 @@ iframe {
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%; }
   .l-footer--3__sitemap {
-    padding: 40px; }
+    padding: 80px 4vw; }
     .l-footer--3__sitemap__menu {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -444,7 +447,7 @@ iframe {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding: 100px 0; }
+  padding: 80px 0; }
   @media screen and (max-width: 799px) {
     .l-section__basic {
       padding: 30px 20px; } }
@@ -592,7 +595,7 @@ iframe {
       width: 100%;
       height: 100%;
       mix-blend-mode: multiply;
-      background: #00ad9e;
+      background: #2b426e;
       opacity: 0.8; }
     .c-headline--5 > span > span {
       display: block;
@@ -605,12 +608,14 @@ iframe {
       font-weight: bold;
       position: relative;
       z-index: 2; }
-      @media screen and (max-width: 799px) {
-        .c-headline--5 > span > span {
-          padding: 30px 20px;
-          font-size: 24px; } }
   .c-headline--5--bg1 {
     background-image: url(../img/c-headline--5--bg1.jpg); }
+  @media screen and (max-width: 799px) {
+    .c-headline--5 {
+      padding: 0; }
+      .c-headline--5 > span > span {
+        padding: 30px 20px;
+        font-size: 24px; } }
 
 .c-col--2 > * {
   width: 50%; }
@@ -638,7 +643,13 @@ iframe {
   width: 100%;
   height: calc(100vw / 3); }
   .c-main--1--bg1 {
-    background: url(../img/dummy.jpg) no-repeat center;
+    background: url(../img/c-main--bg1.jpg) no-repeat center;
+    background-size: cover; }
+  .c-main--1--bg2 {
+    background: url(../img/c-main--bg2.jpg) no-repeat center;
+    background-size: cover; }
+  .c-main--1--bg3 {
+    background: url(../img/c-main--bg3.jpg) no-repeat center;
     background-size: cover; }
 
 .c-main--2 {
@@ -652,15 +663,24 @@ iframe {
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center; }
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
   .c-main--2--bg1 {
-    background: url(../img/c-main--bg1.jpg) no-repeat center;
-    background-size: cover; }
+    background-image: url(../img/c-main--bg1.jpg); }
+  .c-main--2--bg2 {
+    background-image: url(../img/c-main--bg2.jpg); }
+  .c-main--2--bg3 {
+    background-image: url(../img/c-main--bg3.jpg); }
   .c-main--2 > h1 {
     padding: 30px 20px;
     font-size: 4vw;
     color: #fff;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4); }
+  @media screen and (max-width: 799px) {
+    .c-main--2 {
+      height: 340px; } }
 
 .c-list--col3 {
   display: -webkit-box;
@@ -765,7 +785,7 @@ iframe {
   bottom: 0; }
 
 .c-breadcrumbs {
-  max-width: calc(1000px + 40px);
+  max-width: calc(1200px + 40px);
   padding: 20px;
   margin: 0 auto;
   font-size: 14px; }
@@ -1060,11 +1080,20 @@ button {
 .u-c--bl--1 {
   color: #00b0f0; }
 
+.u-c--bl--2 {
+  color: #2b426e; }
+
 .u-c--wh--1 {
   color: #fff; }
 
 .u-bg--gr--1 {
   background: #00ad9e; }
+
+.u-bg--bl--1 {
+  background: #00b0f0; }
+
+.u-bg--bl--2 {
+  background: #2b426e; }
 
 .u-bg--gray--1 {
   background: #efefef; }

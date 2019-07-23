@@ -3,7 +3,8 @@
         > div{
             max-width:1200px;
             margin:0 auto;
-            padding:10px 0;
+            padding:50px 0;
+            border-top:1px solid #ccc;
             > p{
                 text-align:center;
             }
@@ -13,7 +14,7 @@
         > div{
             max-width:1200px;
             margin:0 auto;
-            padding:10px 0;
+            padding:50px 0;
             > p{
                 text-align:center;
             }
@@ -36,7 +37,7 @@
             flex-basis:50%;
         }
         &__sitemap{
-            padding:40px;
+            padding:80px 4vw;
             &__menu{
                 display:flex;
                 flex-wrap:wrap;

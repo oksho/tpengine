@@ -1,5 +1,4 @@
 .c-headline{
-    //???
     &--lowerh1{
         &--1{
             padding:50px 20px;
@@ -132,7 +131,7 @@
                 width:100%;
                 height:100%;
                 mix-blend-mode: multiply;
-                background:#00ad9e;
+                background:$base-color;
                 opacity:0.8;
             }
             > span{
@@ -146,14 +145,19 @@
                 font-weight:bold;
                 position:relative;
                 z-index:2;
-                @media screen and (max-width: 799px) {
-                    padding:30px 20px;
-                    font-size:24px;
-                }
             }
         }
         &--bg1{
             background-image:url(../img/c-headline--5--bg1.jpg);
+        }
+        @media screen and (max-width: 799px) {
+            padding:0;
+            > span{
+                >span{
+                    padding:30px 20px;
+                    font-size:24px;
+                }
+            }
         }
     }
 }
