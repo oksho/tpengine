@@ -68,12 +68,15 @@
         }
         > h1{
             padding:30px 20px;
-            font-size:4vw;
+            font-size:5vw;
             color:#fff;
             text-shadow:0 0 10px rgba(0,0,0,0.4),0 0 10px rgba(0,0,0,0.4),0 0 10px rgba(0,0,0,0.4);
         }
         @media screen and (max-width: 799px) {
             height:340px;
+            > h1{
+                font-size:7vw;
+            }
         }
     }
 }
