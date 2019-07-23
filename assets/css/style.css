@@ -69,7 +69,7 @@ body {
   font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
   color: #333;
   word-break: break-all;
-  line-height: 1.6; }
+  line-height: 1.8; }
 
 ul {
   list-style: none; }
@@ -133,10 +133,10 @@ iframe {
         -ms-flex-pack: justify;
         justify-content: space-between;
         padding: 30px; }
-        .l-header--1__inner__logo img {
-          width: auto;
-          height: auto;
-          max-height: auto; }
+        .l-header--1__inner__logo {
+          height: 60px; }
+          .l-header--1__inner__logo img {
+            max-height: 100%; }
         .l-header--1__inner__gnavi ul {
           display: -webkit-box;
           display: -ms-flexbox;
@@ -614,6 +614,14 @@ iframe {
       z-index: 2; }
   .c-headline--5--bg1 {
     background-image: url(../img/c-headline--5--bg1.jpg); }
+  .c-headline--5--bg2 {
+    background-image: url(../img/c-headline--5--bg2.jpg); }
+  .c-headline--5--bg3 {
+    background-image: url(../img/c-headline--5--bg3.jpg); }
+  .c-headline--5--bg4 {
+    background-image: url(../img/c-headline--5--bg4.jpg); }
+  .c-headline--5--bg5 {
+    background-image: url(../img/c-headline--5--bg5.jpg); }
   @media screen and (max-width: 799px) {
     .c-headline--5 {
       padding: 0; }
