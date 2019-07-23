@@ -2,7 +2,14 @@
     .l-header{
         margin:0 auto;
         position:relative;
+        z-index:4000;
         &--1{
+            position: fixed;
+            left: 0;
+            top:0;
+            width:100%;
+            background:#fff;
+            opacity:0.9;
             &__inner{
                 max-width:1200px;
                 width:100%;
