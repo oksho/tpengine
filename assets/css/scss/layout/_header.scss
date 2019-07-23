@@ -21,7 +21,8 @@
                 &__logo{
                     img{
                         width:auto;
-                        height:60px;
+                        height:auto;
+                        max-height:auto;
                     }
                 }
                 &__gnavi{
@@ -73,7 +74,8 @@
                     margin-bottom:10px;
                     img{
                         width:auto;
-                        height:60px;
+                        height:auto;
+                        max-height:60px;
                     }
                 }
                 &__gnavi{

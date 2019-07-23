@@ -1,4 +1,22 @@
 .c-list{
+    &--num{
+        > li{
+            list-style:decimal outside;
+            margin-left:20px;
+        }
+    }
+    &--disc{
+        > li{
+            list-style:disc outside;
+            margin-left:20px;
+        }
+    }
+    &--latin{
+        > li{
+            list-style:lower-latin outside;
+            margin-left:20px;
+        }
+    }
     &--col3{
         display:flex;
         flex-wrap:wrap;
