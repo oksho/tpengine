@@ -55,4 +55,4 @@ height:6px;
 #l-wrapper > *{cursor:move;}
 
 /*パーツ調整*/
-.l-header{position:relative!important;}
+#menubox .l-header{position:relative!important;}

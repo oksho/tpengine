@@ -120,6 +120,15 @@ const main1 = ''
 +'</section>\n'
 ;
 
+//main2 - 画面いっぱい＋明朝のh1
+const main2 = ''
++'<section>\n'
+	+'<div class="c-main c-main--2 c-main--2--bg1">\n'
+		+'<h1 class="u-font--m u-ta--center">キャッチコピー</h1>\n'
+	+'</div>\n'
++'</section>\n'
+;
+
 //box1
 const box1 = ''
 +'<section class="l-section">\n'
@@ -321,6 +330,17 @@ const box11 = ''
 +'</section>\n'
 ;
 
+//box12 - 横100%見出しとコンテンツ
+const box12 = ''
++'<section class="l-section">\n'
+	+'<h2 class="c-headline--5 c-headline--5--bg1"><span><span>'+dtitle+'</span></span></h2>\n'	
+	+'<div class="l-section__basic">\n'
+		+'<p>\n'+dtext+dtext+dtext+dtext+'</p>\n'
+	+'</div>\n'
++'</section>\n'
+;
+
+
 //bread1 - パンくず
 const bread1 = ''
 +'<div class="c-breadcrumbs">\n'
@@ -399,10 +419,16 @@ function addparts(btn_id) {
 		wrapper.insertAdjacentHTML('beforeend', box10 + '\n');
 	}else if (btn_id == 'box11'){
 		wrapper.insertAdjacentHTML('beforeend', box11 + '\n');
+	}else if (btn_id == 'box12'){
+		wrapper.insertAdjacentHTML('beforeend', box12 + '\n');
+
 	}else if (btn_id == 'bread1'){
 		wrapper.insertAdjacentHTML('beforeend', bread1 + '\n');
+
 	}else if (btn_id == 'main1'){
 		wrapper.insertAdjacentHTML('beforeend', main1 + '\n');
+	}else if (btn_id == 'main2'){
+		wrapper.insertAdjacentHTML('beforeend', main2 + '\n');
 	}else{
 	}
 
