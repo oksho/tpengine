@@ -164,6 +164,7 @@
         }
         @media screen and (max-width: 799px) {
             padding:0;
+            background-attachment: unset;
             > span{
                 >span{
                     padding:30px 20px;

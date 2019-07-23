@@ -624,7 +624,8 @@ iframe {
     background-image: url(../img/c-headline--5--bg5.jpg); }
   @media screen and (max-width: 799px) {
     .c-headline--5 {
-      padding: 0; }
+      padding: 0;
+      background-attachment: unset; }
       .c-headline--5 > span > span {
         padding: 30px 20px;
         font-size: 24px; } }
