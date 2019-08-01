@@ -340,6 +340,36 @@ const box12 = ''
 +'</section>\n'
 ;
 
+//box13 - フッターによくあるお問合せ
+const box13 = ''
++'<section class="l-section u-bg--gray--1">\n'
+	+'<div class="l-section__basic">\n'
+		+'<h2 class="bold u-ta--center u-font--s3l u-margin--bm">お問い合わせ</h2>\n'	
+		+'<p class="u-ta--center u-margin--bm">●●へのお問い合わせは下記よりお気軽にお問い合わせください。</p>\n'
+		+'<div class="c-contactbox--1">\n'
+			+'<div><p>TEL：<a class="bold u-font--sl" href="tel:000-111-2222">000-111-2222</a></p></div>\n'
+			+'<div><a class="c-btn--1" href="/contact/">CONTACT US</a></div>\n'
+		+'</div>\n'
+	+'</div>\n'
++'</section>\n'
+;
+
+//box14 - 画像とテキストズレたやつ
+const box14 = ''
++'<section class="l-section">\n'
+	+'<div class="c-box--1">\n'
+		+'<div class="c-box--1__img" style="background-image:url(assets/img/dummy.jpg);"></div>\n'
+		+'<div class="c-box--1__cont">\n'
+			+'<div class="u-bg--gray--1">\n'
+				+'<div>\n'
+					+'<h2 class="u-font--s3l u-margin--bs bold">'+dtitle+'</h2>\n'
+					+'<p>\n'+dtext+dtext+dtext+dtext+'</p>\n'
+				+'</div>\n'
+			+'</div>\n'
+		+'</div>\n'
+	+'</div>\n'
++'</section>\n'
+;
 
 //bread1 - パンくず
 const bread1 = ''
@@ -421,6 +451,10 @@ function addparts(btn_id) {
 		wrapper.insertAdjacentHTML('beforeend', box11 + '\n');
 	}else if (btn_id == 'box12'){
 		wrapper.insertAdjacentHTML('beforeend', box12 + '\n');
+	}else if (btn_id == 'box13'){
+		wrapper.insertAdjacentHTML('beforeend', box13 + '\n');
+	}else if (btn_id == 'box14'){
+		wrapper.insertAdjacentHTML('beforeend', box14 + '\n');
 
 	}else if (btn_id == 'bread1'){
 		wrapper.insertAdjacentHTML('beforeend', bread1 + '\n');

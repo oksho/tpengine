@@ -652,6 +652,39 @@ iframe {
 .c-width--100p {
   width: 100%; }
 
+.c-box--1 {
+  position: relative; }
+  .c-box--1__img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: calc(100% - 80px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2; }
+    @media screen and (max-width: 799px) {
+      .c-box--1__img {
+        position: relative;
+        width: calc(100% - 20px);
+        height: 280px; } }
+  .c-box--1__cont {
+    padding-top: 80px;
+    padding-left: calc(50% - 80px);
+    position: relative; }
+    .c-box--1__cont > div {
+      padding: 160px 80px 160px 160px; }
+      .c-box--1__cont > div > div {
+        max-width: 600px; }
+    @media screen and (max-width: 799px) {
+      .c-box--1__cont {
+        padding-top: 0;
+        padding-left: 20px; }
+        .c-box--1__cont > div {
+          padding: 80px 30px 30px;
+          margin-top: -50px; } }
+
 .c-main--1 {
   width: 100%;
   height: calc(100vw / 3); }
@@ -696,6 +729,30 @@ iframe {
       height: 340px; }
       .c-main--2 > h1 {
         font-size: 7vw; } }
+
+.c-contactbox--1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .c-contactbox--1 > div {
+    padding: 0 30px; }
+    .c-contactbox--1 > div:first-child {
+      border-right: 1px solid #000; }
+  @media screen and (max-width: 799px) {
+    .c-contactbox--1 {
+      display: block; }
+      .c-contactbox--1 > div {
+        padding: 0 10px;
+        text-align: center; }
+        .c-contactbox--1 > div:first-child {
+          border: none;
+          margin-bottom: 20px; } }
 
 .c-list--num > li {
   list-style: decimal outside;
@@ -816,9 +873,6 @@ iframe {
   padding: 20px;
   margin: 0 auto;
   font-size: 14px; }
-  @media screen and (max-width: 799px) {
-    .c-breadcrumbs {
-      margin: 50px 0 0; } }
   .c-breadcrumbs ul {
     display: -webkit-box;
     display: -ms-flexbox;
