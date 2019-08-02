@@ -129,6 +129,21 @@ const main2 = ''
 +'</section>\n'
 ;
 
+//main3 - 画面いっぱい＋全体隙間＋ヘッダー分高さ調整
+const main3 = ''
++'<section class="c-main c-main--3">\n'
+	+'<div class="c-main--3__cont">\n'
+		+'<div>\n'
+			+'<h1 data-inverted="CATCH COPY">CATCH COPY</h1>\n'
+			+'<p>キャッチコピーしたのちょっとした文章<br>何かしらいい感じの言葉の羅列<br>とてちんとんしゃん</p>\n'
+			+'<div><a class="c-btn c-btn--1">メインコンテンツリンク</a></div>\n'
+		+'</div>\n'
+	+'</div>\n'
+	+'<div class="c-main--3__bg -bg1"><div></div></div>\n'
++'</section>\n'
+;
+
+
 //box1
 const box1 = ''
 +'<section class="l-section">\n'
@@ -463,6 +478,8 @@ function addparts(btn_id) {
 		wrapper.insertAdjacentHTML('beforeend', main1 + '\n');
 	}else if (btn_id == 'main2'){
 		wrapper.insertAdjacentHTML('beforeend', main2 + '\n');
+	}else if (btn_id == 'main3'){
+		wrapper.insertAdjacentHTML('beforeend', main3 + '\n');
 	}else{
 	}
 
